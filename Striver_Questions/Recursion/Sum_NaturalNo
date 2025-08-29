@@ -1,0 +1,11 @@
+class Solution {
+public:
+    int NnumbersSum(int N) {
+        // Base case: when N reaches 0
+        if (N == 0) {
+            return 0;
+        }
+        // Recursive step
+        return N + NnumbersSum(N - 1);
+    }
+};
